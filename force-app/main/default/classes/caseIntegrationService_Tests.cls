@@ -1,6 +1,6 @@
 @isTest
-public with sharing class integrationService_Tests {
-    public integrationService_Tests() {
+public with sharing class caseIntegrationService_Tests {
+    public caseIntegrationService_Tests() {
 
     }
 

@@ -1,5 +1,5 @@
 @isTest
-private class integrationServiceBatch_Tests {
+private class caseIntegrationServiceBatch_Tests {
     @TestSetup
     static void makeData(){
         List<Case> caseList = TestDataFactory.createCaseWithStatus(100, 'New');
@@ -9,7 +9,7 @@ private class integrationServiceBatch_Tests {
     @IsTest
     static void test(){
         Test.startTest();
-            integrationServiceBatch iService = new integrationServiceBatch();
+            caseIntegrationServiceBatch iService = new caseIntegrationServiceBatch();
             Database.executeBatch(iService, 5);
         Test.stopTest();
     }
