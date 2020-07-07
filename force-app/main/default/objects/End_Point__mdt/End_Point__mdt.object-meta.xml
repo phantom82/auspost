@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>place for all defined end points used across SF instance</description>
+    <label>End Point</label>
+    <pluralLabel>End Points</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

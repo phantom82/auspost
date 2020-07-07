@@ -1,0 +1,167 @@
+[
+    [
+        "C:\\Users\\nasee\\Desktop\\auspost\\force-app",
+        {
+            "state": "n",
+            "sourcePath": "C:\\Users\\nasee\\Desktop\\auspost\\force-app",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 0,
+            "modifiedTime": 1593687907743,
+            "changeTime": 1593687907743,
+            "contentHash": "b28b7af69320201d1cf206ebf28373980add1451",
+            "isWorkspace": false,
+            "isArtifactRoot": true
+        }
+    ],
+    [
+        "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main",
+        {
+            "state": "n",
+            "sourcePath": "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 0,
+            "modifiedTime": 1593687907743,
+            "changeTime": 1593687907743,
+            "contentHash": "7505d64a54e061b7acd54ccd58b49dc43500b635",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default",
+        {
+            "state": "n",
+            "sourcePath": "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 0,
+            "modifiedTime": 1593688184652,
+            "changeTime": 1593688184652,
+            "contentHash": "a21009004cd572d890d65233421722a21fcb20a4",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\aura",
+        {
+            "state": "n",
+            "sourcePath": "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\aura",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 0,
+            "modifiedTime": 1593687907743,
+            "changeTime": 1593687907743,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\classes",
+        {
+            "state": "n",
+            "sourcePath": "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\classes",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 0,
+            "modifiedTime": 1593688322978,
+            "changeTime": 1593688322978,
+            "contentHash": "4129a80678b5b64b586c7823c967720163240eb5",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\classes\\caseTriggerHandler.cls",
+        {
+            "state": "n",
+            "sourcePath": "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\classes\\caseTriggerHandler.cls",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 825,
+            "modifiedTime": 1593751136432,
+            "changeTime": 1593751136432,
+            "contentHash": "80148518b0eef7cbc6b9927cdbf7703b4d4f878f",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\classes\\caseTriggerHandler.cls-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\classes\\caseTriggerHandler.cls-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 174,
+            "modifiedTime": 1593688276925,
+            "changeTime": 1593688276925,
+            "contentHash": "b14927db8433719a949fb732f84be0e1c5bd19cd",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\classes\\caseTriggers.trigger",
+        {
+            "state": "n",
+            "sourcePath": "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\classes\\caseTriggers.trigger",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 316,
+            "modifiedTime": 1593688662596,
+            "changeTime": 1593688662596,
+            "contentHash": "08f9ae3bb3e3cb6f7e3118621de508c904247d85",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\classes\\caseTriggers.trigger-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\classes\\caseTriggers.trigger-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 173,
+            "modifiedTime": 1593688322978,
+            "changeTime": 1593688322978,
+            "contentHash": "8cb4f50d95715fe1041e4a11020b8801814c0328",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\lwc",
+        {
+            "state": "n",
+            "sourcePath": "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\lwc",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 0,
+            "modifiedTime": 1593687920034,
+            "changeTime": 1593687920034,
+            "contentHash": "56f2d335ffa27c20b4ea310cf0214fa96f325894",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\nasee\\Desktop\\auspost",
+        {
+            "state": "n",
+            "sourcePath": "C:\\Users\\nasee\\Desktop\\auspost",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 0,
+            "modifiedTime": 1593688260337,
+            "changeTime": 1593688260337,
+            "contentHash": "ac8ebe8fbf8686ccd99613333554bc80e3ff17df",
+            "isWorkspace": true,
+            "isArtifactRoot": false
+        }
+    ]
+]

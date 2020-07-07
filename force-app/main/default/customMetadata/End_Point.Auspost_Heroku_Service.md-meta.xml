@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>EP-1</label>
+    <protected>false</protected>
+    <values>
+        <field>Callout_Type__c</field>
+        <value xsi:type="xsd:string">REST</value>
+    </values>
+    <values>
+        <field>Max_Attempts__c</field>
+        <value xsi:type="xsd:double">3.0</value>
+    </values>
+    <values>
+        <field>Module__c</field>
+        <value xsi:type="xsd:string">Auspost Workforce Management Module</value>
+    </values>
+    <values>
+        <field>URL__c</field>
+        <value xsi:type="xsd:string">https://nfapihub.herokuapp.com</value>
+    </values>
+</CustomMetadata>
