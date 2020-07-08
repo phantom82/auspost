@@ -56,25 +56,25 @@ d) New fields creation in Apex_Callout__c for the payload.<br>
 <b>Testing:</b>
 1. Pull the git source into a scratch org.
 2. Create couple of cases in the org developer console using:
-  //--------------- CASE CREATION--
-List<Case> caseList = new List<Case>();
-for(Integer i=0; i<100; i++) {
-    Case c = new Case();
-    c.Subject = 'testcase '+i;
-    c.Status = 'Working';
-    caseList.add(c);
-}
-insert caseList;
+  //--------------- CASE CREATION--<br>
+List<Case> caseList = new List<Case>();<br>
+for(Integer i=0; i<100; i++) {<br>
+    Case c = new Case();<br>
+    c.Subject = 'testcase '+i;<br>
+    c.Status = 'Working';<br>
+    caseList.add(c);<br>
+}<br>
+insert caseList;<br>
                         
 3. Update the cases and set them Closed.
-//---------------CASE STATUS UPDATE---
-List<Case> caseList = new List<Case>();
-for(Case c : [Select Id, Integrated_Secret_Key__c, Status from Case]) {
-    c.Status = 'Closed';
-    c.Integrated_Secret_Key__c = '';
-    caseList.add(c);
-}
-update caseList;
+//---------------CASE STATUS UPDATE--- <br>
+List<Case> caseList = new List<Case>();<br>
+for(Case c : [Select Id, Integrated_Secret_Key__c, Status from Case]) {<br>
+    c.Status = 'Closed';<br>
+    c.Integrated_Secret_Key__c = '';<br>
+    caseList.add(c);<br>
+}<br>
+update caseList;<br>
 
 4. Run the batch:
-Database.executeBatch(new caseIntegrationServiceBatch(), 5);
+Database.executeBatch(new caseIntegrationServiceBatch(), 5);<br>
