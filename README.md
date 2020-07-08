@@ -30,4 +30,11 @@ Success Response:
 
 Solution:
 
-<img src="./myimage.jpg">
+1. End_Point__mdt is the metadata type capturing all end points used by the system and related parameters.
+2. Case is updated by the user, after update on Case (caseTriggers.cls) Where Status is Closed, leads to creation of corresponding Apex_Callout__c records. 
+<img src="https://github.com/phantom82/auspost/blob/master/main2.PNG">
+
+3. caseIntegrationService.cls implements iCallout, setting up callout specifically for Case object.
+<img src="https://github.com/phantom82/auspost/blob/master/main.PNG">
+4. caseIntegrationServiceBatch.cls processes all the integration (Apex_Callout__c) records in Pending status. In case of service timeout or any intermittent error causing failure in integration, the corresponding record remains in Pending status and only gets picked up in the next batch run. 
+5. Successive batch runs are enabled using batch chaining, batch runs only if there are any pending integration records.
