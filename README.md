@@ -1,7 +1,8 @@
 # auspost
 Code challenge
 
-Requirement:
+<b>Requirement:</b>
+  
 A Case has been updated to be closed. When a Case is closed, the workforce planning team need to be notified to ensure they are correctly tracking Case closures and new work assignments. This is currently handled by an API call to the workforce management platform.
 The environment is a relatively high volume environment with roughly 200 Case closures per minute. The API recently has had some performance issues and every now and again it times out.
 It’s not necessary for the API to be called immediately after the case is closed, as long as the workforce management platform is notified within the day. 
@@ -28,7 +29,7 @@ Success Response:
 {"success":true,"secretKey":"secret key"}
 
 
-Solution:
+<b>Solution:</b>
 
 1. End_Point__mdt is the metadata type capturing all end points used by the system and related parameters.
 2. Case is updated by the user, after update on Case (caseTriggers.cls) Where Status is Closed, leads to creation of corresponding Apex_Callout__c records. 
