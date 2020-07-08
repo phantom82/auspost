@@ -35,7 +35,7 @@ public class TestDataFactory {
             caseIdSet.add(c.OwnerId);
         }
         update caseList;
-        integrationRecordList = [SELECT Id, Record_Id__c, Integration_Status__c, Record_Modified_By__c, Module__c, Max_Attempts__c, No_Of_Attempts__c FROM Apex_Callout__c WHERE Record_Id__c in :caseIdSet AND Integration_Status__c = :integrationService.INTEGRATION_STATUS_PENDING];
+        integrationRecordList = [SELECT Id, Record_Id__c, Integration_Status__c, Record_Modified_By__c, Module__c, Max_Attempts__c, No_Of_Attempts__c FROM Apex_Callout__c WHERE Record_Id__c in :caseIdSet AND Integration_Status__c = :caseIntegrationService.INTEGRATION_STATUS_PENDING];
         return integrationRecordList;
     }
 

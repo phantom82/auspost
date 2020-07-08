@@ -63,7 +63,7 @@
             "sourcePath": "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\classes",
             "isDirectory": true,
             "size": 0,
-            "modifiedTime": 1594124692045,
+            "modifiedTime": 1594202234748,
             "changeTime": 1594124692045,
             "contentHash": "cb132a31b02227db58450d4729565a19ab65e4a1",
             "isMetadataFile": false,
@@ -279,14 +279,14 @@
     [
         "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\profiles\\Admin.profile-meta.xml",
         {
-            "state": "u",
             "sourcePath": "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\profiles\\Admin.profile-meta.xml",
             "isDirectory": false,
-            "isMetadataFile": true,
             "size": 27355,
             "modifiedTime": 1594124879623,
             "changeTime": 1594124879623,
-            "contentHash": "79b7f0df77239fe37388b760be7dc36d03ae975e"
+            "contentHash": "79b7f0df77239fe37388b760be7dc36d03ae975e",
+            "isMetadataFile": true,
+            "state": "u"
         }
     ],
     [
@@ -422,14 +422,14 @@
     [
         "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\classes\\TestDataFactory.cls",
         {
+            "state": "u",
             "sourcePath": "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\classes\\TestDataFactory.cls",
             "isDirectory": false,
-            "size": 1903,
-            "modifiedTime": 1593934306121,
-            "changeTime": 1593934306121,
-            "contentHash": "8c5c2ade6e1c2f7d41590145a17d1ba009d86bea",
             "isMetadataFile": false,
-            "state": "u"
+            "size": 1907,
+            "modifiedTime": 1594202918622,
+            "changeTime": 1594202918622,
+            "contentHash": "cf22af66bd032b5937ee41a082f76f2a7a16bb90"
         }
     ],
     [
@@ -643,14 +643,14 @@
     [
         "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\classes\\caseTriggerHandler_Tests.cls",
         {
+            "state": "u",
             "sourcePath": "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\classes\\caseTriggerHandler_Tests.cls",
             "isDirectory": false,
-            "size": 102,
-            "modifiedTime": 1593770027905,
-            "changeTime": 1593770027905,
-            "contentHash": "3c73f74b0b3bacfb1dce2d88082f15fcba7c483a",
             "isMetadataFile": false,
-            "state": "u"
+            "size": 602,
+            "modifiedTime": 1594202817770,
+            "changeTime": 1594202817770,
+            "contentHash": "604b9d1506d387bc6825c4950c15ebd02cbec3dc"
         }
     ],
     [
@@ -773,14 +773,14 @@
     [
         "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\classes\\apexCalloutTriggerHandler.cls",
         {
+            "state": "u",
             "sourcePath": "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\classes\\apexCalloutTriggerHandler.cls",
             "isDirectory": false,
-            "size": 1285,
-            "modifiedTime": 1594030600670,
-            "changeTime": 1594030600670,
-            "contentHash": "241c85bfe5297d7666d7a2b0a5141f0657914295",
             "isMetadataFile": false,
-            "state": "u"
+            "size": 1272,
+            "modifiedTime": 1594202311246,
+            "changeTime": 1594202311246,
+            "contentHash": "dfc7e8a69c4c3958ab95c921cedce6513b35a1dd"
         }
     ],
     [
@@ -929,14 +929,14 @@
     [
         "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\classes\\caseIntegrationService_Tests.cls",
         {
+            "state": "u",
             "sourcePath": "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\classes\\caseIntegrationService_Tests.cls",
             "isDirectory": false,
-            "size": 948,
-            "modifiedTime": 1594124548356,
-            "changeTime": 1594124548356,
-            "contentHash": "ce940ee012403749a8bf4e29765555699d81c1b5",
             "isMetadataFile": false,
-            "state": "u"
+            "size": 1317,
+            "modifiedTime": 1594202795928,
+            "changeTime": 1594202795928,
+            "contentHash": "9e63d8766834074c0a88adc19ac43d856ffba284"
         }
     ],
     [
