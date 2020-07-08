@@ -44,6 +44,7 @@ Success Response:
 
 
 <b>Notes:</b>
+
 -Object specific batches are catering for the any response processing in bi-directional integrations.<br>
 -New object integration will require the following:<br>
 a) object specific service class implementing iCallout interface.<br>
@@ -55,6 +56,7 @@ d) New fields creation in Apex_Callout__c for the payload.<br>
 -There are 100 callouts allowed per apex transaction but only possible if the service at the other end supports. Most of the cases, a good percentage will time out. Therefore, the batch needs to be executed in small chucks i.e. 10.
 
 <b>Testing:</b>
+
 1. Pull the git source into a scratch org.
 2. Create couple of cases in the org developer console using:<br>
   //--------------- CASE CREATION--<br>
