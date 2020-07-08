@@ -50,12 +50,12 @@ b) object specific batch class<br>
 c) Entry for endpoint details in the End_Point__mdt metadata type.<br>
 d) New fields creation in Apex_Callout__c for the payload.<br>
 
--The callout limit is 250000 calls/ 24 hours, at 200 cases getting closed a min is approx. 100000 cases in 8 hours.<br>
+-At 200 cases getting closed a min is approx. 100000 cases in 8 hours. Advisable to execute integration batch after hours.<br>
 -There are 100 callouts allowed per apex transaction but only possible if the service at the other end supports. Most of the cases, a good percentage will time out. Therefore, the batch needs to be executed in small chucks i.e. 10.
 
 <b>Testing:</b>
 1. Pull the git source into a scratch org.
-2. Create couple of cases in the org developer console using:
+2. Create couple of cases in the org developer console using:<br>
   //--------------- CASE CREATION--<br>
 List<Case> caseList = new List<Case>();<br>
 for(Integer i=0; i<100; i++) {<br>
@@ -66,7 +66,7 @@ for(Integer i=0; i<100; i++) {<br>
 }<br>
 insert caseList;<br>
                         
-3. Update the cases and set them Closed.
+3. Update the cases and set them Closed.<br>
 //---------------CASE STATUS UPDATE--- <br>
 List<Case> caseList = new List<Case>();<br>
 for(Case c : [Select Id, Integrated_Secret_Key__c, Status from Case]) {<br>
