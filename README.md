@@ -37,5 +37,16 @@ Success Response:
 
 3. caseIntegrationService.cls implements iCallout, setting up callout specifically for Case object.
 <img src="https://github.com/phantom82/auspost/blob/master/main.PNG">
-4. caseIntegrationServiceBatch.cls processes all the integration (Apex_Callout__c) records in Pending status. In case of service timeout or any intermittent error causing failure in integration, the corresponding record remains in Pending status and only gets picked up in the next batch run. 
+4. caseIntegrationServiceBatch.cls processes all the integration (Apex_Callout__c) records in Pending status. In case of service timeout or any intermittent error causing failure in integration, the corresponding record remains in Pending status and only gets picked up in the next batch run.
 5. Successive batch runs are enabled using batch chaining, batch runs only if there are any pending integration records.
+
+<b>Notes:</b>
+-Object specific batches are catering for the any response processing in bi-directional integrations.
+-New object integration will require the following:
+a) object specific service class implementing iCallout interface.
+b) object specific batch class
+c) Entry for endpoint details in the End_Point__mdt metadata type.
+d) New fields creation in Apex_Callout__c for the payload.
+
+-The callout limit is 250000 calls/ 24 hours, at 200 cases getting closed a min is approx. 100000 cases in 8 hours.
+-There are 100 callouts allowed per apex transaction but only possible if the service at the other end supports. Most of the cases, a good percentage will time out. Therefore, the batch needs to be executed in small chucks i.e. 10.
