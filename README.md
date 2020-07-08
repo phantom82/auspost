@@ -39,14 +39,42 @@ Success Response:
 <img src="https://github.com/phantom82/auspost/blob/master/main.PNG">
 4. caseIntegrationServiceBatch.cls processes all the integration (Apex_Callout__c) records in Pending status. In case of service timeout or any intermittent error causing failure in integration, the corresponding record remains in Pending status and only gets picked up in the next batch run.
 5. Successive batch runs are enabled using batch chaining, batch runs only if there are any pending integration records.
+6. Keeping batch size as a custom metadata can be implemented.
+
 
 <b>Notes:</b>
--Object specific batches are catering for the any response processing in bi-directional integrations.
--New object integration will require the following:
-a) object specific service class implementing iCallout interface.
-b) object specific batch class
-c) Entry for endpoint details in the End_Point__mdt metadata type.
-d) New fields creation in Apex_Callout__c for the payload.
+-Object specific batches are catering for the any response processing in bi-directional integrations.<br>
+-New object integration will require the following:<br>
+a) object specific service class implementing iCallout interface.<br>
+b) object specific batch class<br>
+c) Entry for endpoint details in the End_Point__mdt metadata type.<br>
+d) New fields creation in Apex_Callout__c for the payload.<br>
 
--The callout limit is 250000 calls/ 24 hours, at 200 cases getting closed a min is approx. 100000 cases in 8 hours.
+-The callout limit is 250000 calls/ 24 hours, at 200 cases getting closed a min is approx. 100000 cases in 8 hours.<br>
 -There are 100 callouts allowed per apex transaction but only possible if the service at the other end supports. Most of the cases, a good percentage will time out. Therefore, the batch needs to be executed in small chucks i.e. 10.
+
+<b>Testing:</b>
+1. Pull the git source into a scratch org.
+2. Create couple of cases in the org developer console using:
+  //--------------- CASE CREATION--
+List<Case> caseList = new List<Case>();
+for(Integer i=0; i<100; i++) {
+    Case c = new Case();
+    c.Subject = 'testcase '+i;
+    c.Status = 'Working';
+    caseList.add(c);
+}
+insert caseList;
+                        
+3. Update the cases and set them Closed.
+//---------------CASE STATUS UPDATE---
+List<Case> caseList = new List<Case>();
+for(Case c : [Select Id, Integrated_Secret_Key__c, Status from Case]) {
+    c.Status = 'Closed';
+    c.Integrated_Secret_Key__c = '';
+    caseList.add(c);
+}
+update caseList;
+
+4. Run the batch:
+Database.executeBatch(new caseIntegrationServiceBatch(), 5);
