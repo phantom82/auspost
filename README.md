@@ -1,5 +1,4 @@
-# auspost
-Code challenge
+# auspost Code challenge
 
 <b>Requirement:</b>
   
@@ -86,3 +85,4 @@ update caseList;<br>
 4. Run the batch:
 Database.executeBatch(new caseIntegrationServiceBatch(), 5);<br>
 <img src="https://github.com/phantom82/auspost/blob/master/main3.PNG">
+
