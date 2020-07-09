@@ -31,23 +31,26 @@ Success Response:
 
 <b>Solution:</b>
 
-1. End_Point__mdt is the metadata type capturing all end points used by the system and related parameters.<br>
-2. Case is updated by the user, after update on Case (caseTriggers.cls) Where Status is Closed, leads to creation of corresponding Apex_Callout__c records.<br> 
+1. End_Point__mdt is the metadata type capturing all end points used by the system and thier related parameters.<br>
+2. Case is updated by the user, after update on Case (caseTriggers.cls) where Status is Closed, leads to creation of corresponding Intergration (Apex_Callout__c) records.<br> 
+
 <img src="https://github.com/phantom82/auspost/blob/master/main2.PNG">
 
-3. caseIntegrationService.cls implements iCallout, setting up callout specifically for Case object.<br>
+3. caseIntegrationService.cls implements iCallout interface, setting up callout specifically for Case object.<br>
+
 <img src="https://github.com/phantom82/auspost/blob/master/main.PNG">
+
 4. caseIntegrationServiceBatch.cls processes all the integration (Apex_Callout__c) records in Pending status. In case of service timeout or any intermittent error causing failure in integration, the corresponding record remains in Pending status and only gets picked up in the next batch run.<br>
-5. Successive batch runs are enabled using batch chaining, batch runs only if there are any pending integration records.<br>
+5. Successive batch runs are enabled using batch chaining, new batch job runs only if there are any pending integration records from existing job.<br>
 6. Max_Attemps__c value can be configured specific to endpoint (End_Point__mdt) for each integration, this value can be overriden for individual integration records as well.<br>
-7. If a certain integration record keeps failing and exceeds the Max_Attemps__c value, it's status is set to Failed and is not considered for integration anymore.<br>
-8. Keeping batch size as a custom metadata can be implemented.<br>
+7. If a certain integration record keeps failing and exceeds the Max_Attempts__c value, it's status is set to Failed and is not considered for integration anymore.<br>
+8. Keeping batch size as a custom metadata value can be implemented.<br>
 
 
 <b>Notes:</b>
 
--Object specific batches are catering for the any response processing in bi-directional integrations.<br>
--New object integration will require the following:<br>
+-Object specific batches are catering for the any response processing from the external service.<br>
+-A new Salesforce object integration will require the following:<br>
 a) object specific service class implementing iCallout interface.<br>
 b) object specific batch class<br>
 c) Entry for endpoint details in the End_Point__mdt metadata type.<br>
