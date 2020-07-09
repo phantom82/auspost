@@ -150,7 +150,7 @@
             "sourcePath": "C:\\Users\\nasee\\Desktop\\auspost",
             "isDirectory": true,
             "size": 0,
-            "modifiedTime": 1594106120979,
+            "modifiedTime": 1594211086908,
             "changeTime": 1593688260337,
             "contentHash": "ac8ebe8fbf8686ccd99613333554bc80e3ff17df",
             "isMetadataFile": false,
@@ -422,14 +422,14 @@
     [
         "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\classes\\TestDataFactory.cls",
         {
-            "state": "u",
             "sourcePath": "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\classes\\TestDataFactory.cls",
             "isDirectory": false,
+            "size": 1377,
+            "modifiedTime": 1594291119740,
+            "changeTime": 1594291119740,
+            "contentHash": "58f0450b0a4d0fd92b2b86dedb22f85573fbd696",
             "isMetadataFile": false,
-            "size": 1907,
-            "modifiedTime": 1594202918622,
-            "changeTime": 1594202918622,
-            "contentHash": "cf22af66bd032b5937ee41a082f76f2a7a16bb90"
+            "state": "u"
         }
     ],
     [
@@ -643,14 +643,14 @@
     [
         "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\classes\\caseTriggerHandler_Tests.cls",
         {
-            "state": "u",
             "sourcePath": "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\classes\\caseTriggerHandler_Tests.cls",
             "isDirectory": false,
+            "size": 705,
+            "modifiedTime": 1594288307975,
+            "changeTime": 1594288307975,
+            "contentHash": "81e2633f34cf37a375df6a64f58b156e09cffee4",
             "isMetadataFile": false,
-            "size": 602,
-            "modifiedTime": 1594202817770,
-            "changeTime": 1594202817770,
-            "contentHash": "604b9d1506d387bc6825c4950c15ebd02cbec3dc"
+            "state": "u"
         }
     ],
     [
@@ -773,14 +773,14 @@
     [
         "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\classes\\apexCalloutTriggerHandler.cls",
         {
-            "state": "u",
             "sourcePath": "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\classes\\apexCalloutTriggerHandler.cls",
             "isDirectory": false,
-            "isMetadataFile": false,
             "size": 1272,
             "modifiedTime": 1594202311246,
             "changeTime": 1594202311246,
-            "contentHash": "dfc7e8a69c4c3958ab95c921cedce6513b35a1dd"
+            "contentHash": "dfc7e8a69c4c3958ab95c921cedce6513b35a1dd",
+            "isMetadataFile": false,
+            "state": "u"
         }
     ],
     [
@@ -879,10 +879,10 @@
         {
             "sourcePath": "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\classes\\caseIntegrationServiceBatch.cls",
             "isDirectory": false,
-            "size": 4323,
-            "modifiedTime": 1594124835818,
-            "changeTime": 1594124835818,
-            "contentHash": "d0c0754fb4f241bdba7bc1ebe423a70c1f0076df",
+            "size": 4388,
+            "modifiedTime": 1594291898973,
+            "changeTime": 1594291898973,
+            "contentHash": "057962779af50e92d8c96e8f553ce667cd148185",
             "isMetadataFile": false,
             "state": "u"
         }
@@ -903,14 +903,14 @@
     [
         "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\classes\\caseIntegrationServiceBatch_Tests.cls",
         {
+            "state": "u",
             "sourcePath": "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\classes\\caseIntegrationServiceBatch_Tests.cls",
             "isDirectory": false,
-            "size": 523,
-            "modifiedTime": 1594124669564,
-            "changeTime": 1594124669564,
-            "contentHash": "2be0052fc1d10adcb5ee20957c09a5eed30ea197",
             "isMetadataFile": false,
-            "state": "u"
+            "size": 697,
+            "modifiedTime": 1594292368999,
+            "changeTime": 1594292368999,
+            "contentHash": "6923bc5cd0d09f370758042bf930fad9ebd429a1"
         }
     ],
     [
@@ -929,14 +929,14 @@
     [
         "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\classes\\caseIntegrationService_Tests.cls",
         {
-            "state": "u",
             "sourcePath": "C:\\Users\\nasee\\Desktop\\auspost\\force-app\\main\\default\\classes\\caseIntegrationService_Tests.cls",
             "isDirectory": false,
+            "size": 1389,
+            "modifiedTime": 1594291333672,
+            "changeTime": 1594291333672,
+            "contentHash": "34bd7c28d7abed404e85bc3cc6e770dca61bf8ec",
             "isMetadataFile": false,
-            "size": 1317,
-            "modifiedTime": 1594202795928,
-            "changeTime": 1594202795928,
-            "contentHash": "9e63d8766834074c0a88adc19ac43d856ffba284"
+            "state": "u"
         }
     ],
     [

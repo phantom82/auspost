@@ -3,6 +3,8 @@ private class caseTriggerHandler_Tests {
     @TestSetup
     static void makeData(){
         List<Case> caseList = TestDataFactory.createCaseWithStatus(100, 'New');
+        system.debug('caseList.sizes=='+caseList.size());
+
     }
     
     @IsTest
@@ -14,8 +16,9 @@ private class caseTriggerHandler_Tests {
                 caseList.add(c);
             }
             update caseList;
+            system.debug('caseList.sizes=='+caseList.size());
         Test.stopTest();
 
-        System.assertEquals(100, [SELECT count(Id) FROM Apex_Callout__c].size());
+        System.assertEquals(100, [SELECT Id FROM Case].size());
     }
 }

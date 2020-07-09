@@ -27,16 +27,8 @@ public class TestDataFactory {
     }
 
     public static List<Apex_Callout__c> createIntegrationServiceRecord(List<Case> caseList) {
-        List<End_Point__mdt> endpoint = (List<End_Point__mdt>)JSON.deserialize('[{"Module__c":"Test Module","CallOut_Type__c":"REST","URL__c":"https://test1231.com"}]',List<End_Point__mdt>.class);
-        List<Apex_Callout__c> integrationRecordList = new List<Apex_Callout__c>();
-        Set<Id> caseIdSet = new Set<Id>();
-        for(Case c : caseList) {
-            c.Status = caseTriggerHandler.CLOSED_CASE;
-            caseIdSet.add(c.OwnerId);
-        }
-        update caseList;
-        integrationRecordList = [SELECT Id, Record_Id__c, Integration_Status__c, Record_Modified_By__c, Module__c, Max_Attempts__c, No_Of_Attempts__c FROM Apex_Callout__c WHERE Record_Id__c in :caseIdSet AND Integration_Status__c = :caseIntegrationService.INTEGRATION_STATUS_PENDING];
+        List<End_Point__mdt> endpoint = [SELECT Module__c, CallOut_Type__c, URL__c, Max_Attempts__c FROM End_Point__mdt];
+        List<Apex_Callout__c> integrationRecordList = apexCalloutTriggerHandler.createRecords(caseList, endpoint[0]);
         return integrationRecordList;
     }
-
 }

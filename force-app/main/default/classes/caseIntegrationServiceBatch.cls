@@ -72,6 +72,9 @@ global class caseIntegrationServiceBatch implements Database.Batchable<sObject>,
     global void finish(Database.BatchableContext bc) {
         List<Apex_Callout__c> pendingCalloutList = new List<Apex_Callout__c>();
         pendingCalloutList =  [SELECT Id, Integration_Status__c FROM Apex_Callout__c WHERE Integration_Status__c = :caseIntegrationService.INTEGRATION_STATUS_PENDING];
+        if(Test.isRunningTest()) {
+            return;
+        }
         if(pendingCalloutList.size() > 0) {
             caseIntegrationServiceBatch b = new caseIntegrationServiceBatch();
             database.executebatch(b, 1);
