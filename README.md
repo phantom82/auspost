@@ -60,7 +60,7 @@ d) New fields creation in Apex_Callout__c for the payload.<br>
 
 <b>Testing:</b>
 
-1. Pull the git source into a scratch org.
+1. Pull the git source in local and push it into a scratch org.
 2. Create couple of cases in the org developer console using:<br>
   //--------------- CASE CREATION--<br>
 List<Case> caseList = new List<Case>();<br>
